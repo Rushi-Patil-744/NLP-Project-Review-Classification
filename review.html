@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Review Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            color: #ffeb3b;
+        }
+        .footer img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <h1>Review Classification</h1>
+        <textarea id="review" placeholder="Enter your review here..."></textarea>
+        <button onclick="predictSentiment()">Submit Review</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Rushikesh Patil</p>
+        <p>
+            <a href="mailto:albatross12121998@gmail.com">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/email.png" alt="Email">Click here to mail me.com
+            </a>
+        </p>
+        <p>
+            <a href="https://wa.me/+917447552017" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt="WhatsApp">WhatsApp
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/Rushi-Patil-744" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub">GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/rushikesh--patil" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" alt="LinkedIn">LinkedIn
+            </a>
+        </p>
+    </div>
+
+    <script>
+        function predictSentiment() {
+            const review = document.getElementById('review').value;
+            alert('Review submitted: ' + review);
+        }
+    </script>
+</body>
+</html>
